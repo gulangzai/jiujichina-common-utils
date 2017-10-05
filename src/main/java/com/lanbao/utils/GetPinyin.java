@@ -1,4 +1,4 @@
-﻿package com.lanbao.utils;
+package com.lanbao.utils;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;

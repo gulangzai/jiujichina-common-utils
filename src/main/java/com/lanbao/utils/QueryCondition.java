@@ -1,4 +1,4 @@
-﻿package com.lanbao.utils;
+package com.lanbao.utils;
 
 public class QueryCondition {
 	public QueryCondition() {

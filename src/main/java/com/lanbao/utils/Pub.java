@@ -1,4 +1,4 @@
-ï»¿package com.lanbao.utils;
+package com.lanbao.utils;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -39,7 +39,7 @@ import sun.misc.BASE64Encoder;
 
 
 /**
- * å…¬ç”¨å‡½æ•°ç±»
+ * ¹«ÓÃº¯ÊıÀà
  */
 public class Pub {
 
@@ -115,7 +115,7 @@ public class Pub {
 	}
 	
 	/**
-	 * æ•°å­—è½¬æ¢ä¸ºåƒåˆ†ä½å‡½æ•°
+	 * Êı×Ö×ª»»ÎªÇ§·ÖÎ»º¯Êı
 	 * @param 1000000
 	 * @return 1000,000
 	 */
@@ -133,7 +133,7 @@ public class Pub {
 	}
 	
 	/**
-	 * è¡¥å°æ•°ç‚¹åä¸¤ä½
+	 * ²¹Ğ¡ÊıµãºóÁ½Î»
 	 * @param n
 	 * @return
 	 */

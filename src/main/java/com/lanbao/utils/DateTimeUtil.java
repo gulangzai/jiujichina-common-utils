@@ -1,4 +1,4 @@
-﻿package com.lanbao.utils;
+package com.lanbao.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,10 +6,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * 日期时间工具类<br>
- * 提供一些常用的日期时间操作方法，所有方法都为静态，不用实例化该类即可使用。<br>
+ * 閺冦儲婀￠弮鍫曟？瀹搞儱鍙跨猾锟�<br>
+ * 閹绘劒绶垫稉锟芥禍娑樼埗閻€劎娈戦弮銉︽埂閺冨爼妫块幙宥勭稊閺傝纭堕敍灞惧閺堝鏌熷▔鏇㈠厴娑撴椽娼ら幀渚婄礉娑撳秶鏁ょ�圭偘绶ラ崠鏍嚉缁宓嗛崣顖欏▏閻€劊锟斤拷<br>
  * <br>
- * 下为日期格式的简单描述详情请参看java API中java.text.SimpleDateFormat<br>
+ * 娑撳璐熼弮銉︽埂閺嶇厧绱￠惃鍕暆閸楁洘寮挎潻鎷岊嚊閹懓顕崣鍌滄箙java API娑撶挷ava.text.SimpleDateFormat<br>
  * The following pattern letters are defined (all other characters from
  * <code>'A'</code> to <code>'Z'</code> and from <code>'a'</code> to
  * <code>'z'</code> are reserved): <blockquote>
@@ -156,54 +156,54 @@ import java.util.Date;
 public class DateTimeUtil {
 
 	/**
-	 * 缺省的日期显示格式： yyyy-MM-dd
+	 * 缂傝櫣娓烽惃鍕）閺堢喐妯夌粈鐑樼壐瀵骏绱� yyyy-MM-dd
 	 */
 	public static final String DEFAULT_DATE_FORMAT = "yyyy-MM-dd";
 
 	/**
-	 * 缺省的日期时间显示格式：yyyy-MM-dd HH:mm:ss
+	 * 缂傝櫣娓烽惃鍕）閺堢喐妞傞梻瀛樻▔缁�鐑樼壐瀵骏绱皔yyy-MM-dd HH:mm:ss
 	 */
 	public static final String DEFAULT_DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
 	/**
-	 * 私有构造方法，禁止对该类进行实例化
+	 * 缁変焦婀侀弸鍕拷鐘虫煙濞夋洩绱濈粋浣诡剾鐎电顕氱猾鏄忕箻鐞涘苯鐤勬笟瀣
 	 */
 	private DateTimeUtil() {
 	}
 
 	/**
-	 * 得到系统当前日期时间
+	 * 瀵版鍩岀化鑽ょ埠瑜版挸澧犻弮銉︽埂閺冨爼妫�
 	 * 
-	 * @return 当前日期时间
+	 * @return 瑜版挸澧犻弮銉︽埂閺冨爼妫�
 	 */
 	public static Date getNow() {
 		return Calendar.getInstance().getTime();
 	}
 
 	/**
-	 * 得到用缺省方式格式化的当前日期
+	 * 瀵版鍩岄悽銊у繁閻焦鏌熷蹇旂壐瀵繐瀵查惃鍕秼閸撳秵妫╅張锟�
 	 * 
-	 * @return 当前日期
+	 * @return 瑜版挸澧犻弮銉︽埂
 	 */
 	public static String getDate() {
 		return getDateTime(DEFAULT_DATE_FORMAT);
 	}
 
 	/**
-	 * 得到用缺省方式格式化的当前日期及时间
+	 * 瀵版鍩岄悽銊у繁閻焦鏌熷蹇旂壐瀵繐瀵查惃鍕秼閸撳秵妫╅張鐔峰挤閺冨爼妫�
 	 * 
-	 * @return 当前日期及时间
+	 * @return 瑜版挸澧犻弮銉︽埂閸欏﹥妞傞梻锟�
 	 */
 	public static String getDateTime() {
 		return getDateTime(DEFAULT_DATETIME_FORMAT);
 	}
 
 	/**
-	 * 得到系统当前日期及时间，并用指定的方式格式化
+	 * 瀵版鍩岀化鑽ょ埠瑜版挸澧犻弮銉︽埂閸欏﹥妞傞梻杈剧礉楠炲墎鏁ら幐鍥х暰閻ㄥ嫭鏌熷蹇旂壐瀵繐瀵�
 	 * 
 	 * @param pattern
-	 *            显示格式
-	 * @return 当前日期及时间
+	 *            閺勫墽銇氶弽鐓庣础
+	 * @return 瑜版挸澧犻弮銉︽埂閸欏﹥妞傞梻锟�
 	 */
 	public static String getDateTime(String pattern) {
 		Date datetime = Calendar.getInstance().getTime();
@@ -211,13 +211,13 @@ public class DateTimeUtil {
 	}
 
 	/**
-	 * 得到用指定方式格式化的日期
+	 * 瀵版鍩岄悽銊﹀瘹鐎规碍鏌熷蹇旂壐瀵繐瀵查惃鍕）閺堬拷
 	 * 
 	 * @param date
-	 *            需要进行格式化的日期
+	 *            闂囷拷鐟曚浇绻樼悰灞剧壐瀵繐瀵查惃鍕）閺堬拷
 	 * @param pattern
-	 *            显示格式
-	 * @return 日期时间字符串
+	 *            閺勫墽銇氶弽鐓庣础
+	 * @return 閺冦儲婀￠弮鍫曟？鐎涙顑佹稉锟�
 	 */
 	public static String getDateTime(Date date, String pattern) {
 		if (null == pattern || "".equals(pattern)) {
@@ -228,91 +228,91 @@ public class DateTimeUtil {
 	}
 
 	/**
-	 * 得到当前年份
+	 * 瀵版鍩岃ぐ鎾冲楠炵繝鍞�
 	 * 
-	 * @return 当前年份
+	 * @return 瑜版挸澧犻獮缈犲敜
 	 */
 	public static int getCurrentYear() {
 		return Calendar.getInstance().get(Calendar.YEAR);
 	}
 
 	/**
-	 * 得到当前月份
+	 * 瀵版鍩岃ぐ鎾冲閺堝牅鍞�
 	 * 
-	 * @return 当前月份
+	 * @return 瑜版挸澧犻張鍫滃敜
 	 */
 	public static int getCurrentMonth() {
-		// 用get得到的月份数比实际的小1，需要加上
+		// 閻⑩暎et瀵版鍩岄惃鍕箑娴犺姤鏆熷В鏂跨杽闂勫懐娈戠亸锟�1閿涘矂娓剁憰浣稿娑擄拷
 		return Calendar.getInstance().get(Calendar.MONTH) + 1;
 	}
 
 	/**
-	 * 得到当前日
+	 * 瀵版鍩岃ぐ鎾冲閺冿拷
 	 * 
-	 * @return 当前日
+	 * @return 瑜版挸澧犻弮锟�
 	 */
 	public static int getCurrentDay() {
 		return Calendar.getInstance().get(Calendar.DATE);
 	}
 
 	/**
-	 * 取得当前日期以后若干天的日期。如果要得到以前的日期，参数用负数。 例如要得到上星期同一天的日期，参数则为-7
+	 * 閸欐牕绶辫ぐ鎾冲閺冦儲婀℃禒銉ユ倵閼汇儱鍏辨径鈺冩畱閺冦儲婀￠妴鍌氼洤閺嬫粏顩﹀妤�鍩屾禒銉ュ閻ㄥ嫭妫╅張鐕傜礉閸欏倹鏆熼悽銊ㄧ閺佽埇锟斤拷 娓氬顩х憰浣哥繁閸掗绗傞弰鐔告埂閸氬奔绔存径鈺冩畱閺冦儲婀￠敍灞藉棘閺佹澘鍨稉锟�-7
 	 * 
 	 * @param days
-	 *            增加的日期数
-	 * @return 增加以后的日期
+	 *            婢х偛濮為惃鍕）閺堢喐鏆�
+	 * @return 婢х偛濮炴禒銉ユ倵閻ㄥ嫭妫╅張锟�
 	 */
 	public static Date addDays(int days) {
 		return add(getNow(), days, Calendar.DATE);
 	}
 
 	/**
-	 * 取得指定日期以后若干天的日期。如果要得到以前的日期，参数用负数。
+	 * 閸欐牕绶遍幐鍥х暰閺冦儲婀℃禒銉ユ倵閼汇儱鍏辨径鈺冩畱閺冦儲婀￠妴鍌氼洤閺嬫粏顩﹀妤�鍩屾禒銉ュ閻ㄥ嫭妫╅張鐕傜礉閸欏倹鏆熼悽銊ㄧ閺佽埇锟斤拷
 	 * 
 	 * @param date
-	 *            基准日期
+	 *            閸╁搫鍣弮銉︽埂
 	 * @param days
-	 *            增加的日期数
-	 * @return 增加以后的日期
+	 *            婢х偛濮為惃鍕）閺堢喐鏆�
+	 * @return 婢х偛濮炴禒銉ユ倵閻ㄥ嫭妫╅張锟�
 	 */
 	public static Date addDays(Date date, int days) {
 		return add(date, days, Calendar.DATE);
 	}
 
 	/**
-	 * 取得当前日期以后某月的日期。如果要得到以前月份的日期，参数用负数。
+	 * 閸欐牕绶辫ぐ鎾冲閺冦儲婀℃禒銉ユ倵閺屾劖婀�閻ㄥ嫭妫╅張鐔达拷鍌氼洤閺嬫粏顩﹀妤�鍩屾禒銉ュ閺堝牅鍞ら惃鍕）閺堢噦绱濋崣鍌涙殶閻€劏绀嬮弫鑸拷锟�
 	 * 
 	 * @param months
-	 *            增加的月份数
-	 * @return 增加以后的日期
+	 *            婢х偛濮為惃鍕箑娴犺姤鏆�
+	 * @return 婢х偛濮炴禒銉ユ倵閻ㄥ嫭妫╅張锟�
 	 */
 	public static Date addMonths(int months) {
 		return add(getNow(), months, Calendar.MONTH);
 	}
 
 	/**
-	 * 取得指定日期以后某月的日期。如果要得到以前月份的日期，参数用负数。 注意，可能不是同一日子，例如2003-1-31加上一个月是2003-2-28
+	 * 閸欐牕绶遍幐鍥х暰閺冦儲婀℃禒銉ユ倵閺屾劖婀�閻ㄥ嫭妫╅張鐔达拷鍌氼洤閺嬫粏顩﹀妤�鍩屾禒銉ュ閺堝牅鍞ら惃鍕）閺堢噦绱濋崣鍌涙殶閻€劏绀嬮弫鑸拷锟� 濞夈劍鍓伴敍灞藉讲閼虫垝绗夐弰顖氭倱娑擄拷閺冦儱鐡欓敍灞肩伐婵★拷2003-1-31閸旂姳绗傛稉锟芥稉顏呮箑閺勶拷2003-2-28
 	 * 
 	 * @param date
-	 *            基准日期
+	 *            閸╁搫鍣弮銉︽埂
 	 * @param months
-	 *            增加的月份数
-	 * @return 增加以后的日期
+	 *            婢х偛濮為惃鍕箑娴犺姤鏆�
+	 * @return 婢х偛濮炴禒銉ユ倵閻ㄥ嫭妫╅張锟�
 	 */
 	public static Date addMonths(Date date, int months) {
 		return add(date, months, Calendar.MONTH);
 	}
 
 	/**
-	 * 内部方法。为指定日期增加相应的天数或月数
+	 * 閸愬懘鍎撮弬瑙勭《閵嗗倷璐熼幐鍥х暰閺冦儲婀℃晶鐐插閻╃绨查惃鍕亯閺佺増鍨ㄩ張鍫熸殶
 	 * 
 	 * @param date
-	 *            基准日期
+	 *            閸╁搫鍣弮銉︽埂
 	 * @param amount
-	 *            增加的数量
+	 *            婢х偛濮為惃鍕殶闁诧拷
 	 * @param field
-	 *            增加的单位，年，月或者日
-	 * @return 增加以后的日期
+	 *            婢х偛濮為惃鍕礋娴ｅ稄绱濋獮杈剧礉閺堝牊鍨ㄩ懓鍛）
+	 * @return 婢х偛濮炴禒銉ユ倵閻ㄥ嫭妫╅張锟�
 	 */
 	private static Date add(Date date, int amount, int field) {
 		Calendar calendar = Calendar.getInstance();
@@ -324,37 +324,37 @@ public class DateTimeUtil {
 	}
 
 	/**
-	 * 计算两个日期相差天数。 用第一个日期减去第二个。如果前一个日期小于后一个日期，则返回负数
+	 * 鐠侊紕鐣绘稉銈勯嚋閺冦儲婀￠惄绋挎▕婢垛晜鏆熼妴锟� 閻€劎顑囨稉锟芥稉顏呮）閺堢喎鍣洪崢鑽ゎ儑娴滃奔閲滈妴鍌氼洤閺嬫粌澧犳稉锟芥稉顏呮）閺堢喎鐨禍搴℃倵娑擄拷娑擃亝妫╅張鐕傜礉閸掓瑨绻戦崶鐐剁閺侊拷
 	 * 
 	 * @param one
-	 *            第一个日期数，作为基准
+	 *            缁楊兛绔存稉顏呮）閺堢喐鏆熼敍灞肩稊娑撳搫鐔�閸戯拷
 	 * @param two
-	 *            第二个日期数，作为比较
-	 * @return 两个日期相差天数
+	 *            缁楊兛绨╂稉顏呮）閺堢喐鏆熼敍灞肩稊娑撶儤鐦潏锟�
+	 * @return 娑撱倓閲滈弮銉︽埂閻╃妯婃径鈺傛殶
 	 */
 	public static long diffDays(Date one, Date two) {
 		return (one.getTime() - two.getTime()) / (24 * 60 * 60 * 1000);
 	}
 
 	/**
-	 * 计算两个日期相差月份数 如果前一个日期小于后一个日期，则返回负数
+	 * 鐠侊紕鐣绘稉銈勯嚋閺冦儲婀￠惄绋挎▕閺堝牅鍞ら弫锟� 婵″倹鐏夐崜宥勭娑擃亝妫╅張鐔风毈娴滃骸鎮楁稉锟芥稉顏呮）閺堢噦绱濋崚娆掔箲閸ョ偠绀嬮弫锟�
 	 * 
 	 * @param one
-	 *            第一个日期数，作为基准
+	 *            缁楊兛绔存稉顏呮）閺堢喐鏆熼敍灞肩稊娑撳搫鐔�閸戯拷
 	 * @param two
-	 *            第二个日期数，作为比较
-	 * @return 两个日期相差月份数
+	 *            缁楊兛绨╂稉顏呮）閺堢喐鏆熼敍灞肩稊娑撶儤鐦潏锟�
+	 * @return 娑撱倓閲滈弮銉︽埂閻╃妯婇張鍫滃敜閺侊拷
 	 */
 	public static int diffMonths(Date one, Date two) {
 
 		Calendar calendar = Calendar.getInstance();
 
-		// 得到第一个日期的年分和月份数
+		// 瀵版鍩岀粭顑跨娑擃亝妫╅張鐔烘畱楠炴潙鍨庨崪灞炬箑娴犺姤鏆�
 		calendar.setTime(one);
 		int yearOne = calendar.get(Calendar.YEAR);
 		int monthOne = calendar.get(Calendar.MONDAY);
 
-		// 得到第二个日期的年份和月份
+		// 瀵版鍩岀粭顑跨癌娑擃亝妫╅張鐔烘畱楠炵繝鍞ら崪灞炬箑娴狅拷
 		calendar.setTime(two);
 		int yearTwo = calendar.get(Calendar.YEAR);
 		int monthTwo = calendar.get(Calendar.MONDAY);
@@ -363,14 +363,14 @@ public class DateTimeUtil {
 	}
 
 	/**
-	 * 将一个字符串用给定的格式转换为日期类型。<br>
-	 * 注意：如果返回null，则表示解析失败
+	 * 鐏忓棔绔存稉顏勭摟缁楋缚瑕嗛悽銊х舶鐎规氨娈戦弽鐓庣础鏉烆剚宕叉稉鐑樻）閺堢喓琚崹瀣拷锟�<br>
+	 * 濞夈劍鍓伴敍姘洤閺嬫粏绻戦崶鐎梪ll閿涘苯鍨悰銊с仛鐟欙絾鐎芥径杈Е
 	 * 
 	 * @param datestr
-	 *            需要解析的日期字符串
+	 *            闂囷拷鐟曚浇袙閺嬫劗娈戦弮銉︽埂鐎涙顑佹稉锟�
 	 * @param pattern
-	 *            日期字符串的格式，默认为“yyyy-MM-dd”的形式
-	 * @return 解析后的日期
+	 *            閺冦儲婀＄�涙顑佹稉鑼畱閺嶇厧绱￠敍宀勭帛鐠併倓璐熼垾娓瑈yy-MM-dd閳ユ繄娈戣ぐ銏犵础
+	 * @return 鐟欙絾鐎介崥搴ｆ畱閺冦儲婀�
 	 */
 	public static Date parse(String datestr, String pattern) {
 		Date date = null;
@@ -392,79 +392,34 @@ public class DateTimeUtil {
 	}
 
 	/**
-	 * 返回本月的最后一天
+	 * 鏉╂柨娲栭張顒佹箑閻ㄥ嫭娓堕崥搴濈婢讹拷
 	 * 
-	 * @return 本月最后一天的日期
+	 * @return 閺堫剚婀�閺堬拷閸氬簼绔存径鈺冩畱閺冦儲婀�
 	 */
 	public static Date getMonthLastDay() {
 		return getMonthLastDay(getNow());
 	}
 
 	/**
-	 * 返回给定日期中的月份中的最后一天
+	 * 鏉╂柨娲栫紒娆忕暰閺冦儲婀℃稉顓犳畱閺堝牅鍞ゆ稉顓犳畱閺堬拷閸氬簼绔存径锟�
 	 * 
 	 * @param date
-	 *            基准日期
-	 * @return 该月最后一天的日期
+	 *            閸╁搫鍣弮銉︽埂
+	 * @return 鐠囥儲婀�閺堬拷閸氬簼绔存径鈺冩畱閺冦儲婀�
 	 */
 	public static Date getMonthLastDay(Date date) {
 
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(date);
 
-		// 将日期设置为下一月第一天
+		// 鐏忓棙妫╅張鐔活啎缂冾喕璐熸稉瀣╃閺堝牏顑囨稉锟芥径锟�
 		calendar.set(calendar.get(Calendar.YEAR),
 				calendar.get(Calendar.MONTH) + 1, 1);
 
-		// 减去1天，得到的即本月的最后一天
+		// 閸戝繐骞�1婢垛晪绱濆妤�鍩岄惃鍕祮閺堫剚婀�閻ㄥ嫭娓堕崥搴濈婢讹拷
 		calendar.add(Calendar.DATE, -1);
 
 		return calendar.getTime();
 	}
-
-	public static void main(String[] args) {
-
-		String sss = getDateTime("yyyy年MM月dd日");
-		String test = "2003-1-31";
-		Date date;
-		try {
-			date = parse(test, "");
-
-			System.out.println("得到当前日期 － getDate():" + DateTimeUtil.getDate());
-			System.out.println("得到当前日期时间 － getDateTime():"
-					+ DateTimeUtil.getDateTime());
-
-			System.out.println("得到当前年份 － getCurrentYear():"
-					+ DateTimeUtil.getCurrentYear());
-			System.out.println("得到当前月份 － getCurrentMonth():"
-					+ DateTimeUtil.getCurrentMonth());
-			System.out.println("得到当前日子 － getCurrentDay():"
-					+ DateTimeUtil.getCurrentDay());
-
-			System.out.println("解析 － parse(" + test + "):"
-					+ getDateTime(date, "yyyy-MM-dd"));
-
-			System.out.println("自增月份 － addMonths(3):"
-					+ getDateTime(addMonths(3), "yyyy-MM-dd"));
-			System.out.println("增加月份 － addMonths(" + test + ",3):"
-					+ getDateTime(addMonths(date, 3), "yyyy-MM-dd"));
-			System.out.println("增加日期 － addDays(" + test + ",3):"
-					+ getDateTime(addDays(date, 3), "yyyy-MM-dd"));
-			System.out.println("自增日期 － addDays(3):"
-					+ getDateTime(addDays(3), "yyyy-MM-dd"));
-
-			System.out.println("比较日期 － diffDays():"
-					+ DateTimeUtil.diffDays(DateTimeUtil.getNow(), date));
-			System.out.println("比较月份 － diffMonths():"
-					+ DateTimeUtil.diffMonths(DateTimeUtil.getNow(), date));
-
-			System.out.println("得到" + test + "所在月份的最后一天:"
-					+ getDateTime(getMonthLastDay(date), "yyyy-MM-dd"));
-
-		} catch (Exception e) {
-			System.out.println(e.getStackTrace());
-		}
-
-	}
-
+ 
 }
