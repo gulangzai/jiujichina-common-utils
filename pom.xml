@@ -4,9 +4,8 @@
     <groupId>com.jiujichina</groupId>
     <artifactId>jiujichina-common-parent</artifactId>
     <version>1.0.1</version>
-  </parent>
+  </parent> 
   
-    <groupId>com.jiujichina</groupId>
     <artifactId>jiujichina-common-utils</artifactId>
     <version>${jiujichina-common-utils.version}</version>
      
