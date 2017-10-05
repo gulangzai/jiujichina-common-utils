@@ -10,9 +10,11 @@
     <version>${jiujichina-common-utils.version}</version>
      
      <dependencies>
-        <groupId>com.jiujichina</groupId>
-	    <artifactId>jiujichina-common-base</artifactId>
-	    <version>${jiujichina-common-base.version}</version>
+        <dependency>
+            <groupId>com.jiujichina</groupId>
+		    <artifactId>jiujichina-common-base</artifactId>
+		    <version>${jiujichina-common-base.version}</version>
+        </dependency> 
      </dependencies>
      
      
